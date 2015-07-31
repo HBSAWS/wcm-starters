@@ -1,20 +1,19 @@
 <%@ Page language="C#" Inherits="hbs.internet.AuthoringLayoutPage.AuthoringLayoutPage,hbs.internet.AuthoringLayoutPage,Version=1.0.0.0,Culture=neutral,PublicKeyToken=7cec13d6e9941f28" meta:progid="SharePoint.WebPartPage.Document" %>
 <%@ Register Tagprefix="SharePointWebControls" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register tagprefix="XslQuery3" namespace="hbs.internet.XslQuery3" assembly="hbs.internet.XslQuery3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a4394b75aef6f834" %>
+<%@ Register tagprefix="XslQuery4" namespace="hbs.internet.XslQuery4" assembly="hbs.internet.XslQuery4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7afffba6c934d3eb" %>
 
-
-
+<!-- if you need to put something in the head -->
 <asp:Content ContentPlaceholderID="PlaceHolderAdditionalPageHead" runat="server">
     <link rel="overlay" href="/Style%20Library/hbs/images/overlays/OVERLAY-IMAGE-FOR-TEMPLATE.png"/>
 </asp:Content>
 
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
 
-<div id="leftnav">
-    <XslQuery3:XslQueryWebPart3 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/leftnav.xsl" Title="Left Nav" 
+<div>
+    <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/leftnav.xsl" Title="Left Nav" 
         Description="" ImportErrorMessage="Could not be imported" 
     __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
-    id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery3:XslQueryWebPart3>
+    id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 </div>
 
 <PublishingWebControls:RichHtmlField ID="RichHtmlField1" FieldName="PublishingPageContent" runat="server"></PublishingWebControls:RichHtmlField>
