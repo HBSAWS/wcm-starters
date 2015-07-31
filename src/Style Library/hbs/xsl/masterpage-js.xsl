@@ -29,7 +29,7 @@
     </xsl:template>
     <xsl:template match="/Render">
     
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <xsl:value-of select="UniversalJS/hbs:Response" disable-output-escaping="yes"/>
         <script type="text/javascript" src="http://www.hbs.edu/shared/js/widgets.js"></script>
         <script type="text/javascript" src="/Style Library/hbs/js/isc.js"></script>

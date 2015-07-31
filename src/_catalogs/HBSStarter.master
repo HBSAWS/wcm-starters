@@ -18,7 +18,7 @@
 	<title><asp:Literal ID="PageTitle" runat="server"></asp:Literal></title>
 
 	<!-- favicon -->
-	<SharePoint:SPShortcutIcon runat="server" IconUrl="/favicon.ico"/>
+	<SharePoint:SPShortcutIcon runat="server" IconUrl="https://secure.hbs.edu/static/favicon.ico"/>
 	
 
 	<SharePoint:RobotsMetaTag runat="server"/>
