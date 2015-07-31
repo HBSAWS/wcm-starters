@@ -23,7 +23,7 @@
 		
 		
 	<!-- favicon -->
-	<SharePoint:SPShortcutIcon runat="server" IconUrl="/Style Library/hbs/images/favicon2011.ico"/>
+	<SharePoint:SPShortcutIcon runat="server" IconUrl="https://secure.hbs.edu/static/favicon.ico"/>
 	
 	<!-- all OOTB css -->
 	<SharePoint:CssLink runat="server" Version="4"/>
@@ -48,7 +48,8 @@
           overflow-y: auto;
 	}	
     </style>
-    <Sharepoint:SPSecurityTrimmedControl runat="server" Permissions="EditListItems"> <style type="text/css">
+    <Sharepoint:SPSecurityTrimmedControl runat="server" Permissions="EditListItems"> 
+        <style type="text/css">
 		/* fix scrolling on list pages */
 		#s4-bodyContainer {
 			position: relative;
@@ -422,7 +423,6 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 					<asp:ContentPlaceHolder id="PlaceHolderEditModeArea" runat="server"></asp:ContentPlaceHolder>
 				</div>
 				<!-- content-Area - -->
-				<p>&#160;</p>
 				<div class="clear"></div>
 				
 			</div> <!-- content - -->
