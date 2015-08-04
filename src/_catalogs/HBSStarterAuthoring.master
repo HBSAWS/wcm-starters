@@ -439,7 +439,8 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
             
             <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageJavaScript" runat="server"></asp:ContentPlaceHolder>
 
-            <Sharepoint:SPSecurityTrimmedControl runat="server" Permissions="ViewFormPages"> <XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/wcm/xsl/main.xsl" Args="wcm-authoring-js" Title="WCM Authoring Extensions" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" id="g_29824302_d7b2_4c77_b7c5_9f42192751c3"></XslQuery4:XslQueryWebPart4>
+            <Sharepoint:SPSecurityTrimmedControl runat="server" Permissions="ViewFormPages"> 
+                <XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/wcm/xsl/main.xsl" Args="wcm-authoring-js" Title="WCM Authoring Extensions" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" id="g_29824302_d7b2_4c77_b7c5_9f42192751c3"></XslQuery4:XslQueryWebPart4>
             </Sharepoint:SPSecurityTrimmedControl>
 
 
