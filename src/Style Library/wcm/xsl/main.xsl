@@ -3,9 +3,8 @@
    xmlns:z="#RowsetSchema" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
    exclude-result-prefixes="hbs z msxsl">
 
-    <xsl:import href="http://webdev.hbs.edu/sharepoint/wcm/xsl/main.xsl"/>
-    <xsl:variable name="WCMHOST" select="'http://webdev.hbs.edu'"/>
+    <xsl:import href="https://secure.hbs.edu/static/libs/wcm-authoring/1.0/xsl/main.xsl"/>
+    <xsl:variable name="ROOT" select="'https://secure.hbs.edu/static/libs/wcm-authoring/1.0'"/>
     <xsl:output omit-xml-declaration="yes" method="html"/>
-  
 	
 </xsl:stylesheet>
