@@ -5,7 +5,6 @@
 <%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
 <%@ Register TagPrefix="wssuc" TagName="MUISelector" src="~/_controltemplates/MUISelector.ascx" %>
 <%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" src="~/_controltemplates/DesignModeConsole.ascx" %>
-<%@ Register tagprefix="XslQuery3" namespace="hbs.internet.XslQuery3" assembly="hbs.internet.XslQuery3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a4394b75aef6f834" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
