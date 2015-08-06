@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Console>
+	<references>
+		<reference TagPrefix="cms"
+		  assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+		  namespace="Microsoft.SharePoint.Publishing.WebControls.EditingMenuActions" />
+	</references>
+	<structure >
+			<ConsoleNode ConfigMenu="Replace"
+			  Action="cms:CreateNewPublishingPageAction" 
+			  NavigateUrl="~site/_layouts/createpage.aspx"
+		      HideIfDisabled="true"
+		      UseResourceFile="true"
+		      MenuGroupId="200"
+		      Sequence="210"
+		      PermissionContext="CurrentList"
+		      ImageUrl="/_layouts/images/crtpage.gif"
+		      ID="exedCreatePage"
+		      ChangedNodeID="wsaCreatePage"/>
+
+	      <ConsoleNode ConfigMenu="Add"
+			   DisplayText="Authoring Tools"
+			   Description="View the HBS Authoring tools"
+			   HideIfDisabled="true"
+			   UseResourceFile="false"
+			   MenuGroupId="400"
+			   Sequence="7100"
+			   PermissionContext="CurrentSite"
+			   UserRights="ViewPages"
+			   ImageUrl="/_layouts/images/vwcntnt.gif"
+			   NavigateUrl="~sitecollection/_layouts/viewlsts.aspx"
+			   ID="AuthorTools">
+
+			   
+	      <ConsoleNode ConfigMenu="Add"
+			   DisplayText="Site Admin"
+			   Description="Administration Tools"
+			   HideIfDisabled="true"
+			   UseResourceFile="false"
+			   MenuGroupId="400"
+			   Sequence="7100"
+			   PermissionContext="CurrentSite"
+			   UserRights="ViewPages"
+			   ImageUrl="/_layouts/images/WPICON.gif"
+
+			   NavigateUrl="~sitecollection/Style Library/wcm/admin.aspx"
+			   ID="SiteAdmin"  />
+
+	      <ConsoleNode ConfigMenu="Add"
+			   DisplayText="Pending Edits"
+			   Description="View all unpublished edits"
+			   HideIfDisabled="true"
+			   UseResourceFile="false"
+			   MenuGroupId="400"
+			   Sequence="7100"
+			   PermissionContext="CurrentSite"
+			   UserRights="ViewPages"
+			   ImageUrl="/_layouts/images/centraladmin_security_informationpolicy_32x32.png"
+			   NavigateUrl="~sitecollection/Style%20Library/wcm/main.aspx?view=publish"
+			   ID="PendingEdits"  />
+			   
+			   
+			   
+			<ConsoleNode ConfigMenu="Add"
+			   DisplayText="View Site Collection Content"
+			   Description="View the content at the top level of the site collection"
+			   HideIfDisabled="true"
+			   UseResourceFile="false"
+			   MenuGroupId="400"
+			   Sequence="7200"
+			   PermissionContext="CurrentSite"
+			   UserRights="ViewPages"
+			   ImageUrl="/_layouts/images/vwcntnt.gif"
+			   NavigateUrl="~sitecollection/_layouts/viewlsts.aspx"
+			   ID="ViewAllSiteCollectionContent"  />
+
+
+	    </ConsoleNode>
+	
+
+	
+	</structure>
+</Console>
