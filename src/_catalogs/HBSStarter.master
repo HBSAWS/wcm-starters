@@ -15,36 +15,29 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
-	<title><asp:Literal ID="PageTitle" runat="server"></asp:Literal></title>
-
-	<!-- favicon -->
-	<SharePoint:SPShortcutIcon runat="server" IconUrl="https://secure.hbs.edu/static/favicon.ico"/>
+	<title><asp:Literal ID="PageTitle" runat="server"/></title>
 	
-
+	<SharePoint:SPShortcutIcon runat="server" IconUrl="http://www.hbs.edu/favicon.ico"/>
+	
 	<SharePoint:RobotsMetaTag runat="server"/>
 	
 	<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-head.xsl" Title="Head" 
 	Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
-
 	
 	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"></asp:ContentPlaceHolder>
 </head>
 
 <body>
 
-<form runat="server">
 
+<textarea style="display:none">
+<form runat="server"></form>
 <WebPartPages:SPWebPartManager runat="server"/>
+</textarea>
 
 
-<script type="text/javascript">
-RegisterSod = function(){}
-ExecuteOrDelayUntilScriptLoaded = function(){}
-RegisterSodDep = function(){}
-</script>
-		
 <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-supernav.xsl" Title="Supernav" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
@@ -125,11 +118,6 @@ id="g_29824302_d7b2_4c77_b6c6_9e43092651c3"></XslQuery4:XslQueryWebPart4>
 	
 </asp:Panel>
 
-<!-- Handle Search "enter" key and back button -->
-<input type="text" name="__spDummyText1" style="display:none;" size="1"/>
-<input type="text" name="__spDummyText2" style="display:none;" size="1"/>
-
-</form>
 
 <asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" />
 
