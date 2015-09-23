@@ -67,18 +67,13 @@
 			background:#F2F2F2;
 		}
 
-		/* if you want to change the left nav width, change this and the margin-left in .s4-ca */
-		body #s4-leftpanel {
-			/* width:155px; */
-		}		
 		body div#s4-workspace {
-          overflow-y: scroll;
+                       overflow-y: scroll;
 		}	
 		
 		/* body area normally has a white background */
 		.s4-ca {
 			background:transparent none repeat scroll 0 0;
-			/* margin-left:155px; */
 		}	
 	</style> </Sharepoint:SPSecurityTrimmedControl>
  	
