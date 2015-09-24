@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="/newventurecompetition/Style Library/hbs/css/nvc.css" type="text/css" media="screen" />
         
         <link rel="image_src" href="http://www.hbs.edu/images/site/sharelogo.jpg" />
-
+        <meta name="HBSSearchUrl" content="/Pages/search.aspx">
         <!--<meta name="HBSSearchSubset" content="sitename"/>-->
         <meta name="PageBuildDateTime" content="{hbs:Time/Sortable} on {Request/LOCAL_ADDR}"/>
 
