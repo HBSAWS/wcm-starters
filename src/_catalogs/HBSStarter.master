@@ -51,7 +51,7 @@ id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 
 	<!-- content-area + -->
 	<!-- STARTINDEX -->
-	<div class="mainContainer link-controller" id="Div1" runat="server">
+	<div class="mainContainer link-controller" runat="server">
 		<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" >
 		</asp:ContentPlaceHolder>
 		<asp:ContentPlaceHolder id="PlaceHolderEditModeArea" runat="server" />
@@ -94,8 +94,7 @@ id="g_29824302_d7b2_4c77_b6c6_9e43092651c3"></XslQuery4:XslQueryWebPart4>
 	
 	<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/>
 	<asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server"/>
-    <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server"/>	
-
+        <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server"/>
 	<asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server"/>
 	<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server"/>
 	<asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" runat="server"/>
