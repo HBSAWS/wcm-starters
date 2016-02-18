@@ -16,7 +16,7 @@
         <hbs:GetPage/>
         <UniversalHead>
             <hbs:GetRemote>
-                <Cache Key="hbs.universal.head" RecoverOnError="True" Minutes="720"/>
+                <Cache Key="hbs.SITENAME.universal.head" RecoverOnError="True" Minutes="720"/>
                 <xsl:choose>
                   <xsl:when test="contains(hbs:Request/SERVER_NAME,'dev') or contains(hbs:Request/SERVER_NAME, 'qa')">
                     <Request Url="http://webdev.hbs.edu/shared/ssi/v2/universal.head.html" ResultType="Text">
