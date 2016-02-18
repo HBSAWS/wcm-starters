@@ -13,7 +13,7 @@
 	    <xsl:if test="hbs:Request/debug='footer'"><hbs:Debug/></xsl:if>
 	    <Footer>	
 	        <hbs:GetRemote>
-				<Cache Key="hbs.nvc.universal.footer" RecoverOnError="True" Minutes="720"/>
+				<Cache Key="hbs.SITENAME.universal.footer" RecoverOnError="True" Minutes="720"/>
 				<Request Url="http://www.hbs.edu/shared/ssi/site-specific/universal.footer.nvc.html" ResultType="Text">
                    <Header Name="Timeout" Value="3000"/>
                 </Request>
