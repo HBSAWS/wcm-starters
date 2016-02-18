@@ -8,7 +8,7 @@
 	    <hbs:xDebug/>
 	    <UniversalHeader>
 	        <hbs:GetRemote>
-				<Cache Key="hbs.environment.universal.header" RecoverOnError="True" Minutes="20"/>
+				<Cache Key="hbs.SITENAME.universal.header" RecoverOnError="True" Minutes="20"/>
 				<Header Name="Timeout" Value="1000"/>
 				<Request Url="http://www.hbs.edu/shared/ssi/universal.header.html" ResultType="Text"/>
 			</hbs:GetRemote>
