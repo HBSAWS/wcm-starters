@@ -9,7 +9,7 @@
         <xsl:if test="hbs:Request/debug='js'"><hbs:Debug/></xsl:if>
         <UniversalJS>
             <hbs:GetRemote>
-                <Cache Key="hbs.universal.js" RecoverOnError="True" Minutes="720"/>
+                <Cache Key="hbs.SITENAME.universal.js" RecoverOnError="True" Minutes="720"/>
                 <xsl:choose>
                   <xsl:when test="contains(hbs:Request/SERVER_NAME,'authdev')">
                     <Request Url="http://webdev.hbs.edu/shared/ssi/v2/universal.js.html" ResultType="Text">
