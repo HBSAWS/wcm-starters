@@ -38,13 +38,13 @@
                <FacetGroups>
                   <xsl:call-template name="HBSWebFacets"/>
                   
-		            <!--
-		            <FacetGroup Name="ExampleFacets" Sort="True">
-                      <Facet Name="HBSSubset" Type="Subsets"/>
-		                <Facet Name="q" Type="Search"/>
-		                <Facet Name="HBSWebsite" Label="Website" Type="List"/>
-		            </FacetGroup>
-		            -->
+                  <!--
+                  <FacetGroup Name="ExampleFacets" Sort="True">
+                     <Facet Name="HBSSubset" Type="Subsets"/>
+                     <Facet Name="q" Type="Search"/>
+                     <Facet Name="HBSWebsite" Label="Website" Type="List"/>
+                  </FacetGroup>
+                  -->
 		            
                </FacetGroups> 
                   
