@@ -43,6 +43,7 @@
                      <Facet Name="HBSSubset" Type="Subsets"/>
                      <Facet Name="q" Type="Search"/>
                      <Facet Name="HBSWebsite" Label="Website" Type="List"/>
+                     <Facet Name="HBSTopic" Label="Topics" Type="HierList" Zeros="True" />
                   </FacetGroup>
                   -->
 		            
