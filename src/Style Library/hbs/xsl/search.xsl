@@ -44,7 +44,18 @@
                      <Facet Name="q" Type="Search"/>
                      <Facet Name="HBSWebsite" Label="Website" Type="List"/>
                      <Facet Name="HBSTopic" Label="Topics" Type="HierList" Zeros="True" />
-                  </FacetGroup>
+			<Facet Name="type" Field="HBSContentType" Label="Type" Type="List" MoreLimit="20"/>
+			<Facet Name="topic" Field="HBSTopic" Label="Topic" Type="HierList"/>
+			<Facet Name="industry" Field="HBSIndustry" Label="Industry" Type="BigList" MoreStyle="AZList" DefaultCollapsed="True"/>
+			<Facet Name="region" Field="HBSGeographicArea" Label="Geographic Area" Type="HierList" DefaultCollapsed="True" MoreLimit="20"/>
+			<Facet Name="faculty" Field="HBSCurrentFaculty" Label="Current Faculty" Type="AZList" Zeros="True" ComplexFacet="True" DefaultCollapsed="True"/>
+			<Facet Name="emeriti" Field="HBSEmeritiFaculty" Label="Emeriti Faculty" Type="AZList" Zeros="True" ComplexFacet="True" DefaultCollapsed="True"/>
+			<Facet Name="date" Field="HBSSortDate" Label="Date" Type="DateRange" xMinDate="01/01/2012" DefaultCollapsed="True"/>
+			<Facet Name="format" Field="HBSFormat" Label="Format" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
+			<Facet Name="keyword" Field="HBSKeyword" Label="Keyword" Type="Hidden" Hidden="True"/>
+			<Facet Name="language" Field="HBSLanguage" Label="Languages" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
+			<Facet Name="unit" Field="HBSCompanyUnit" Label="Academic Unit" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
+
                   -->
 		            
                </FacetGroups> 
