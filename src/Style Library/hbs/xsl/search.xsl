@@ -57,6 +57,16 @@
 			<Facet Name="unit" Field="HBSCompanyUnit" Label="Academic Unit" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
 
                   -->
+                  
+                  <!-- examples of complex facet data 
+                  
+                  <arr name="HBSGeographicArea">
+      <str>|t=US Northeast|p=United States|</str>
+      <str>|t=United States|</str>
+      <str>|t=US West|p=United States|</str>
+      <str>|t=United States|</str>
+    </arr> 
+                  -->
 		            
                </FacetGroups> 
                   
