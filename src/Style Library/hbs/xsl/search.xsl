@@ -29,6 +29,9 @@
                     <!-- disable grouping -->
                     <!-- <xsl:with-param name="Group" select="'False'"/> -->
 
+                    <!-- point to production content -->
+                    <!-- <xsl:with-param name="Prod" select="true()"/> -->
+
                   </xsl:call-template>
                </EndPoints> 
 
