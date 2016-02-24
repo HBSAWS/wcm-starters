@@ -50,7 +50,7 @@
                   
                </FacetGroups> 
 
-               <Page Mode="Standalone">
+               <Page Mode="Standalone" _Title="Custom Title">
                   <Breadcrumb Name="Recruiting" Url="/"/>
                </Page>
 
