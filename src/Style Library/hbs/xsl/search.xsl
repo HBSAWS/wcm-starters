@@ -25,7 +25,11 @@
                </Collection>
 
                <EndPoints>
-                  <xsl:call-template name="HBSWebEndPoints"/>
+                  <xsl:call-template name="HBSWebEndPoints">
+                    <!-- disable grouping -->
+                    <!-- <xsl:with-param name="Group" select="'False'"/> -->
+
+                  </xsl:call-template>
                </EndPoints> 
 
                <FacetGroups>
