@@ -14,7 +14,9 @@
             <SearchSettings>
 
                <WebRoot Url="http://www.hbs.edu/shared/components/search1"/>
-
+               
+               <!--<Style IndividualPages="True" Sidebar="True" />-->
+               
                <Collection>
                     <xsl:call-template name="HBSWebSubsets"/>
 
