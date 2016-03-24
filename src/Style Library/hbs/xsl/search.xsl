@@ -57,6 +57,10 @@
 			<Facet Name="keyword" Field="HBSKeyword" Label="Keyword" Type="Hidden" Hidden="True"/>
 			<Facet Name="language" Field="HBSLanguage" Label="Languages" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
 			<Facet Name="unit" Field="HBSCompanyUnit" Label="Academic Unit" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
+	              <Facet Type="Html">
+		              <div class="shim24"></div>
+		              <div><a class="mu" href="/leadership/20th-century-leaders/Pages/charts-and-statistics.aspx">Charts &amp; Statistics</a></div>
+	              </Facet>
 
                   -->
                   
