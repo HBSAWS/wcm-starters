@@ -638,7 +638,8 @@
 					</div>
 				</div>
 			</div>
-			<SharePoint:DeveloperDashboard runat="server"/>
+			<%-- disabled so it doesn't appear when we enable the developer dashboard globally
+			<SharePoint:DeveloperDashboard runat="server"/>--%>
 		</div>
 </div>
   <asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server">
