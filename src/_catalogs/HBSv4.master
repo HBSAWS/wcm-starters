@@ -48,8 +48,10 @@
         require(["wcm/wcm.main"], function (WCM) { WCM.installAuthoring();});
     </script>
 	
-	
-	
+    <style>
+    .ms-dialog #DeveloperDashboard {display:none;}
+    </style>
+
 </head>
 <body scroll="no" onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" class="v4master">
   <form runat="server" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}">
