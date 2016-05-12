@@ -78,7 +78,8 @@
                   
                </FacetGroups> 
 
-               <Page Mode="Standalone" _Title="Custom Title">
+               <Page Mode="Standalone" SeoOptimized="True">
+               	  <Title Site="eBaker - Alumni"/>
                   <Breadcrumb Name="Recruiting" Url="/"/>
                </Page>
 
