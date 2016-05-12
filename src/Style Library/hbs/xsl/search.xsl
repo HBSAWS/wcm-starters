@@ -15,6 +15,9 @@
 
                <WebRoot Url="http://www.hbs.edu/shared/components/search1"/>
                
+               <DeltaLoader Url="/Style%20Library/wcm/solr.aspx?load=AlumniEbakerResources&amp;delta=true" 
+                            ChangeToken="{hbs:GetListProperty('CareerEbakerResources','ChangeToken')}" />
+
                <!--<Style IndividualPages="True" Sidebar="True" />-->
                
                <Collection>
