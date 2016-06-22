@@ -19,7 +19,7 @@
 	
 	<xsl:variable name="headerColor">
 	   <xsl:choose>
-	      <xsl:when test="hbs:Page/z:row">
+	      <xsl:when test="hbs:Page/z:row/@ows_PrimaryColor">
 			<xsl:value-of select="hbs:Page/z:row/@ows_PrimaryColor"/>-inherit
 	      </xsl:when>
 	      <xsl:otherwise>
