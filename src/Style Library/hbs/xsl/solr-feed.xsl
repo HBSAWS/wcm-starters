@@ -67,6 +67,9 @@
                  <doc>
                     <field name="id"></field>
                     <field name="HBSDataSource"></field>
+                    <xsl:if test="@ows_Visibility = 'Hidden'">
+	                     <field name="HBSDataLifecycle">Deleted</field>
+	                 </xsl:if>
                     <field name="HBSSource"></field>
                     <field name="HBSSubset"></field>
                     <field name="HBSModifiedDate"><xsl:value-of select="hbs:Replace(@ows_Modified,' ','T')"/>Z</field>
