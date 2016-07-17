@@ -52,8 +52,11 @@
                             </Where>
                         </Query>
                         <RowLimit>50</RowLimit>
-                    </View>
-                </hbs:SPQuery>
+                     </View>
+                     <QueryOptions>
+                        <DatesInUtc>True</DatesInUtc>
+                     </QueryOptions>
+            </hbs:SPQuery>
 
             </AllProfiles>
             <hbs:Repeat/>
