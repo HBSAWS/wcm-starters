@@ -79,8 +79,6 @@
                   -->
 		            
                </FacetGroups> 
-                  
-               </FacetGroups> 
 
                <Page Mode="Standalone" SeoOptimized="True">
                	  <Title Site="eBaker - Alumni"/>
