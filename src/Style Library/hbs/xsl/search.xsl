@@ -48,6 +48,7 @@
                      <Facet Name="HBSSubset" Type="Subsets"/>
                      <Facet Name="q" Type="Search"/>
                      <Facet Name="HBSWebsite" Label="Website" Type="List"/>
+                     <Facet Name="HBSTopic" Label="Shared Interests" Type="List" Zeros="True" MoreLimit="20" SingleSelect="True" Toggle="False" Counts="False" AlwaysActive="True"/>
                      <Facet Name="HBSTopic" Label="Topics" Type="HierList" Zeros="True" />
 			<Facet Name="type" Field="HBSContentType" Label="Type" Type="List" MoreLimit="20"/>
 			<Facet Name="topic" Field="HBSTopic" Label="Topic" Type="HierList"/>
