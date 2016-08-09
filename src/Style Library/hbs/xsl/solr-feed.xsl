@@ -17,7 +17,6 @@
                 <hbs:SPQuery Name="query-remote-stories">
                     <Site Path="~SiteCollection" />
                     <List Name="RemoteStories" />
-                    <Cache Key="hbs.solr.hci.remote.stories.{hbs:Request/delta}.{hbs:Request/limit}.{hbs:Request/start}.{hbs:Request/end}" Minutes="20" CheckForListChanges="True" />
                     <View>
                         <Query>
                             <Where>
