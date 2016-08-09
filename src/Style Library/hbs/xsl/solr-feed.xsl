@@ -50,6 +50,9 @@
                                     </Eq>
                                 </And>
                             </Where>
+                            <OrderBy>
+                               <FieldRef Name="Modified" Ascending="TRUE"/>
+                            </OrderBy>
                         </Query>
                         <RowLimit>50</RowLimit>
                      </View>
