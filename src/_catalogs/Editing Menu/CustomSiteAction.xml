@@ -74,6 +74,18 @@
 			   NavigateUrl="~sitecollection/_layouts/viewlsts.aspx"
 			   ID="ViewAllSiteCollectionContent"  />
 
+                       <ConsoleNode ConfigMenu="Add" 
+                            DisplayText="Import HBS Content" 
+                            Description="Add Global HBS Web content to your site." 
+                            HideIfDisabled="true" 
+                            UseResourceFile="false" 
+                            MenuGroupId="400" 
+                            Sequence="7300" 
+                            PermissionContext="CurrentSite" 
+                            UserRights="ViewPages" 
+                            ImageUrl="/_layouts/images/menuspreadsheet.gif" 
+                            NavigateUrl="~sitecollection/Style Library/wcm/intake.aspx" 
+                            ID="ViewAllHBSContent"/>
 
 	    </ConsoleNode>
 	
