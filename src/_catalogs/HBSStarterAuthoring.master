@@ -16,7 +16,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="Expires" content="0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
-	<title><asp:Literal ID="PageTitle" runat="server"></asp:Literal></title>
+	<title><asp:Literal ID="PageTitle" runat="server" __designer:Preview="[ Literal &quot;PageTitle&quot; ]" __designer:Values="&lt;P N='ID' T='PageTitle' /&gt;&lt;P N='Page' ID='1' /&gt;&lt;P N='TemplateControl' ID='2' /&gt;&lt;P N='AppRelativeTemplateSourceDirectory' R='-1' /&gt;"></asp:Literal></title>
 	
 	<!-- robots -->
 	<SharePoint:RobotsMetaTag runat="server"/>
@@ -79,7 +79,7 @@
  	
 	<%-- HEAD ================================================================================== --%>
 	
-	<XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" Args="authoring" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-head.xsl" Title="Head" 
+	<XslQuery4:XslQueryWebPart4 runat="server" Args="head" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Title="Head" 
 	Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
@@ -399,13 +399,13 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 		<div>
 		    <%-- HBS BODY ==================================================== --%>
 
-			<XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-supernav.xsl" Title="Supernav" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
+			<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="supernav" Title="Supernav" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 			__MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 			id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 
 		    <div id="container" class="type-framework color-framework grid-framework component-framework pattern-framework js-framework responsive-framework">
 								
-                <XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-header.xsl" Args="authoring" Title="Header" 
+                <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="header" Title="Header" 
                 Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 				__MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 				id="g_29824302_d7b2_4c87_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
@@ -422,12 +422,12 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 				
 			</div> <!-- content - -->
 		
-			<XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-footer.xsl" Args="authoring" Title="Footer" 
+			<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="footer" Title="Footer" 
 			Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 			__MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
 			id="g_29824302_d7b2_4c77_b6c6_9e43092651c2"></XslQuery4:XslQueryWebPart4>
 
-            <XslQuery4:XslQueryWebPart4 runat="server" CompileOn="Checkout" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-js.xsl" Title="JS" 
+            <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Title="JS" Args="js"
             Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
             __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c3}" WebPart="true" __designer:IsClosed="false" 
             id="g_29824302_d7b2_4c77_b6c6_9e43092651c3"></XslQuery4:XslQueryWebPart4>
