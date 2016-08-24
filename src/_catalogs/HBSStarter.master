@@ -21,7 +21,7 @@
 	
 	<SharePoint:RobotsMetaTag runat="server"/>
 	
-	<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-head.xsl" Title="Head" 
+	<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Title="Head" Args="head"
 	Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
@@ -38,13 +38,13 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 </textarea>
 
 
-<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-supernav.xsl" Title="Supernav" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
+<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="supernav" Title="Supernav" Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 
 <div id="container" class="type-framework color-framework grid-framework component-framework pattern-framework js-framework responsive-framework">
 					
-    <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-header.xsl" Title="Header" 
+    <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="header" Title="Header" 
     Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 	__MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 	id="g_29824302_d7b2_4c87_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
@@ -61,12 +61,12 @@ id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 	
 </div> <!-- container - -->
 
-<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-footer.xsl" Title="Footer" 
+<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="footer" Title="Footer" 
 Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c6_9e43092651c2"></XslQuery4:XslQueryWebPart4>
 
-<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage-js.xsl" Title="JS" 
+<XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/masterpage.xsl" Args="js" Title="JS" 
 Description="Uses an XSL file with steps that query for data and display the results" ImportErrorMessage="Could not be imported" 
 __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c3}" WebPart="true" __designer:IsClosed="false" 
 id="g_29824302_d7b2_4c77_b6c6_9e43092651c3"></XslQuery4:XslQueryWebPart4>
