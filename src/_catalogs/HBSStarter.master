@@ -17,6 +17,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
 	<title><asp:Literal ID="PageTitle" runat="server"/></title>
 	
+	<asp:Literal ID="PageMeta" runat="server"/>
+	
 	<SharePoint:SPShortcutIcon runat="server" IconUrl="http://www.hbs.edu/favicon.ico"/>
 	
 	<SharePoint:RobotsMetaTag runat="server"/>
