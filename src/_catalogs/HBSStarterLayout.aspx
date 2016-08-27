@@ -12,9 +12,7 @@
 
 <div>
     <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/leftnav.xsl" Title="Left Nav" 
-        Description="" ImportErrorMessage="Could not be imported" 
-    __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e32092651c1}" WebPart="true" __designer:IsClosed="false" 
-    id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
+        Description="" ImportErrorMessage="" WebPart="true" id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 </div>
 
 <PublishingWebControls:RichHtmlField ID="RichHtmlField1" FieldName="PublishingPageContent" runat="server"></PublishingWebControls:RichHtmlField>
