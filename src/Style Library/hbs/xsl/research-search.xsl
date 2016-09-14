@@ -17,7 +17,7 @@
            	 	<xsl:call-template name="query-research-faculty"></xsl:call-template>
             </RelatedFaculty>
             
-    		<hbs:Repeat/>
+            <hbs:Repeat/>
     	</Step1>
     </xsl:template>
     
