@@ -8,7 +8,7 @@
 
     <xsl:template match="/Root">
         <Search1>
-            <xsl:if test="hbs:Request/debug"><hbs:Debug/></xsl:if>
+            <xsl:if test="hbs:Request/debug = 'true'"><hbs:Debug/></xsl:if>
             <xsl:copy-of select="hbs:Request"/>
 
             <SearchSettings>
