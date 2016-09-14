@@ -21,7 +21,7 @@
     	</Step1>
     </xsl:template>
     
-	<xsl:template match="/Step1">    	
+    <xsl:template match="/Step1">    	
         <Search1>
             <xsl:if test="hbs:Request/debug"><hbs:Debug/></xsl:if>
             <xsl:copy-of select="hbs:Request"/>
