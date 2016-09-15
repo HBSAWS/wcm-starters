@@ -85,15 +85,15 @@
             <xsl:copy-of select="Request|UniversalHead|Footer|UniversalJS|UniversalHeader"/>
             <xsl:choose>
                 <xsl:when test="$args = 'head'">
+                    <xsl:variable name="title" select="hbs:GetPageProperty('Title')"/>
                     <hbs:SetControl Name="PageTitle">
                       <xsl:choose>
-                          <xsl:when test="hbs:Page/z:row/@ows_Title = 'Home'">
+                          <xsl:when test="$title = 'Home'">
                              New Venture Competition - Harvard Business School
                           </xsl:when>
-                          <xsl:when test="hbs:Page/z:row/@ows_Title = 'Profile Details'"></xsl:when>
-                          <xsl:when test="hbs:Page/z:row/@ows_Title = 'topic'"></xsl:when>
-                          <xsl:when test="hbs:Page/z:row">
-                             <xsl:value-of select="hbs:Page/z:row/@ows_Title"/> - New Venture Competition - Harvard Business School
+                          <xsl:when test="$title = 'topic'"></xsl:when>
+                          <xsl:when test="$title">
+                             <xsl:value-of select="$title"/> - New Venture Competition - Harvard Business School
                           </xsl:when>
                       </xsl:choose>
                     </hbs:SetControl>
@@ -132,16 +132,8 @@
                 </div>
             </xsl:when>
             <xsl:when test="$args = 'header'">
-            
                 <xsl:variable name="headerColor">
-                   <xsl:choose>
-                      <xsl:when test="hbs:Page/z:row/@ows_PrimaryColor">
-                        <xsl:value-of select="hbs:Page/z:row/@ows_PrimaryColor"/>-inherit
-                      </xsl:when>
-                      <xsl:otherwise>
-                        silver-inherit
-                      </xsl:otherwise>
-                   </xsl:choose>
+                   <xsl:value-of select="hbs:Or(hbs:GetPageProperty('PrimaryColor'),'silver')"/>-inherit
                 </xsl:variable>
                 
                 <div class="back-to-top"><a href="#" class="icon-back-to-top"></a></div> 
