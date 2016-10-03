@@ -28,7 +28,7 @@
 		       
                <WebRoot Url="http://www.hbs.edu/shared/components/search1"/>
                
-               <Style Sidebar="True" HideSource="True"/>
+               <Style Sidebar="True" HideSource="True" HideArticleType="True"/>
 				
                <Collection>
                     <Subset Label="Faculty &amp; Research" Name="default" 
