@@ -78,7 +78,7 @@
                     </xsl:if>
                     <field name="HBSSource"></field>
                     <field name="HBSSubset"></field>
-                    <field name="HBSModifiedDate"><xsl:value-of select="hbs:Replace(@ows_Modified,' ','T')"/>Z</field>
+                    <field name="HBSModifiedDate"><xsl:value-of select="@ows_Modified"/></field>
                     <field name="HBSTitle"></field>
                     <field name="HBSBody"></field>
                     <field name="HBSLink"></field>
