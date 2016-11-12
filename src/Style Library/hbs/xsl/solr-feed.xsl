@@ -27,13 +27,7 @@
                                             <Gt>
                                                 <FieldRef Name="Modified" />
                                                 <Value Type="DateTime" IncludeTimeValue="TRUE">
-                                                    <xsl:variable name="year" select="hbs:GetDateTime('yyyy')/@Formatted"/>
-                                                    <xsl:variable name="month" select="hbs:GetDateTime('MM')/@Formatted"/>
-                                                    <xsl:variable name="day" select="hbs:GetDateTime('dd')/@Formatted"/>
-                                                    <xsl:variable name="hour" select="hbs:GetDateTime('HH')/@Formatted"/>
-                                                    <xsl:variable name="minute" select="hbs:GetDateTime('mm')/@Formatted"/>
-                                                    <xsl:variable name="second" select="hbs:GetDateTime('ss')/@Formatted"/>
-                                                    <xsl:value-of select="hbs:AddSeconds($year,$month,$day,$hour,$minute,$second,-7200,'yyyy-MM-ddTHH:mm:ssZ','')/@Formatted"/>
+                                                     <xsl:value-of select="hbs:GetOffsetDateTime('yyyy-MM-ddTHH:mm:ssZ',-10*60*1000)/@Formatted"/>
                                                 </Value>
                                             </Gt>
                                         </xsl:when>
