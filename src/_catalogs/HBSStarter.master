@@ -34,7 +34,7 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 <body>
 
 
-<textarea style="display:none">
+<textarea style="display:none" aria-hidden="true" aria-label="Hidden Textarea">
 <form runat="server"></form>
 <WebPartPages:SPWebPartManager runat="server"/>
 </textarea>
