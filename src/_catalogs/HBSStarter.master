@@ -53,7 +53,7 @@ id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 
 	<!-- content-area + -->
 	<!-- STARTINDEX -->
-	<div class="mainContainer link-controller" runat="server">
+	<div class="mainContainer link-controller" runat="server" aria-role="main">
 		<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
 		<asp:ContentPlaceHolder id="PlaceHolderEditModeArea" runat="server" />
 	</div>
