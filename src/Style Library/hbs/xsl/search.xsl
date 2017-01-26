@@ -36,8 +36,14 @@
 
                     <!-- point to production content -->
                     <!-- <xsl:with-param name="Prod" select="true()"/> -->
-
                   </xsl:call-template>
+		       
+		  <!--
+                     for intranet content HBSAssetsV1
+	            <xsl:call-template name="HBSIntranetEndPoints"/>            
+                  -->
+
+		       
                </EndPoints> 
 
                <FacetGroups>
