@@ -17,6 +17,11 @@
                
                <DeltaLoader Url="/Style%20Library/wcm/solr.aspx?load=AlumniEbakerResources&amp;delta=true" 
                             ChangeToken="{hbs:GetListProperty('CareerEbakerResources','ChangeToken')}" />
+		    
+	       <!-- intranet delta loader
+               <DeltaLoader Call="/Style%20Library/wcm/xsl/solr.xsl" DataSource="DataHub" 
+                            ChangeToken="{hbs:QueryResults/@ChangeToken}"/>
+               -->
 
                <!--<Style IndividualPages="True" Sidebar="True" />-->
                
