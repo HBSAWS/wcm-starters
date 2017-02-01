@@ -41,6 +41,9 @@
 
                     <!-- point to production content -->
                     <!-- <xsl:with-param name="Prod" select="true()"/> -->
+			  
+	            <!--Group by HBSEntityID (or some other field). By default, it uses HBSLink-->
+	            <!--<xsl:with-param name="Group" select="'HBSEntityID'"/>-->
                   </xsl:call-template>
 		       
 		  <!--
