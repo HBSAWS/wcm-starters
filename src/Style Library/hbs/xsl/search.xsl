@@ -24,6 +24,16 @@
                -->
 
                <!--<Style IndividualPages="True" Sidebar="True" />-->
+		    
+	       <!--
+                local custom CSS or Javascript
+               <AdditionalPageHead>
+		  <style></style>
+                  <script></script>
+               </AdditionalPageHead>
+               -->
+
+
                
                <Collection>
                     <xsl:call-template name="HBSWebSubsets"/>
