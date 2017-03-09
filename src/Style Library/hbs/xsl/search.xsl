@@ -41,6 +41,12 @@
                     <Subset Label="Recruiting" Name="default" SubsetFilter="Recruiting"
                             FacetGroup="DefaultFacets" EndPoint="web">
                     </Subset>
+		       
+		      <!--
+                         When working with dates, be sure to convert your NOW query into a UTC format
+                         <xsl:variable name="now" select="hbs:GetUTCTime('yyyy-MM-ddTHH:mm:ssZ')/@Formatted"/>
+                         Filter="HBSSortDate:[{$now} TO *]"
+                      -->
 
                </Collection>
 
