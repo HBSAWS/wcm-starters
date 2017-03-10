@@ -44,7 +44,7 @@
 		       
 		      <!--
                          When working with dates, be sure to convert your NOW query into a UTC format
-                         <xsl:variable name="now" select="hbs:GetUTCTime('yyyy-MM-ddTHH:mm:ssZ')/@Formatted"/>
+                         <xsl:variable name="now" select="hbs:GetUTCTime('yyyy-MM-ddTHH:00:00Z')/@Formatted"/>
                          Filter="HBSSortDate:[{$now} TO *]"
                       -->
 
