@@ -90,7 +90,20 @@
 			<Facet Name="format" Field="HBSFormat" Label="Format" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
 			<Facet Name="keyword" Field="HBSKeyword" Label="Keyword" Type="Hidden" Hidden="True"/>
 			<Facet Name="language" Field="HBSLanguage" Label="Languages" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
-			<Facet Name="unit" Field="HBSCompanyUnit" Label="Academic Unit" Type="List" MoreLimit="20" DefaultCollapsed="True"/>
+			<Facet Name="unit" Field="HBSCompanyUnit" Label="Academic Unit" Type="List" MoreLimit="20" DefaultCollapsed="True">
+				     <SortFunction>
+					function(a,b){
+					   console.info("Sort",a,b);
+					   var partsa = a.label.split('/');
+					   var partsb = b.label.split('/');
+					   if(partsa[0] &lt; partsb[0]) return 1;
+					   if(partsa[0] &gt; partsb[0]) return -1;
+					   if(partsa[1] &lt; partsb[1]) return -1;
+					   if(partsa[1] &gt; partsb[1]) return 1;
+					   return 0;
+					}
+				     </SortFunction>
+			</Facet>
 	              <Facet Type="Html">
 		              <div class="shim24"></div>
 		              <div><a class="mu" href="/leadership/20th-century-leaders/Pages/charts-and-statistics.aspx">Charts &amp; Statistics</a></div>
