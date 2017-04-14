@@ -127,6 +127,7 @@
                 <meta name="PageBuildDateTime" content="{hbs:Time/Sortable} on {Request/LOCAL_ADDR}"/>
             </xsl:when>
             <xsl:when test="$args = 'supernav'">
+                <div id="skip" class="noindex"><a href="#main" tabindex="1">Go to main content</a></div> 
                 <div xml:space="preserve">
                     <xsl:value-of select="UniversalHeader/hbs:Response" disable-output-escaping="yes"/>
                 </div>
