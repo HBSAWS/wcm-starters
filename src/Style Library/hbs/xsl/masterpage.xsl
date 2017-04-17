@@ -218,9 +218,9 @@
             <xsl:when test="$args = 'js'">
                 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
                 <xsl:value-of select="UniversalJS/hbs:Response" disable-output-escaping="yes"/>
-                <script type="text/javascript" src="http://www.hbs.edu/shared/js/widgets.js"></script>
+                <script type="text/javascript" src="https://secure.hbs.edu/static/shared/js/widgets.js"></script>
                 <script type="text/javascript" src="/Style Library/hbs/js/isc.js"></script>
-                <script type="text/javascript" src="http://www.hbs.edu/js/analytics.js"></script>
+                <script type="text/javascript" src="https://secure.hbs.edu/static/js/analytics.js"></script>
                 <script type="text/javascript">analytics.settings({profile:'isc'})</script>             
             </xsl:when>
         </xsl:choose>        
