@@ -11,8 +11,7 @@
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
 
 <div>
-    <XslQuery4:XslQueryWebPart4 runat="server" XSL="~SiteCollection/Style Library/hbs/xsl/leftnav.xsl" Title="Left Nav" 
-        Description="" ImportErrorMessage="" WebPart="true" id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
+    <XslQuery4:XslQueryWebPart4 runat="server" Args="" Xsl="~SiteCollection/Style Library/hbs/xsl/leftnav.xsl"/>
 </div>
 
 <PublishingWebControls:RichHtmlField ID="RichHtmlField1" FieldName="PublishingPageContent" runat="server"></PublishingWebControls:RichHtmlField>
