@@ -13,7 +13,7 @@
     -->
     <xsl:template match="/Root">
         <Render>
-            <xsl:if test="hbs:Request/debug='true'">
+            <xsl:if test="hbs:Request/debug='true' and hbs:UserIsSiteAdmin()">
                 <hbs:Debug/>
             </xsl:if>
             <hbs:Repeat/>
