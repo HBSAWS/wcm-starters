@@ -4,18 +4,7 @@
    exclude-result-prefixes="hbs z msxsl">
    
    
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/heroes/research-hero-home.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/heroes/research-hero.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/features/featured-media.xsl"/> 
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/sidebars/sidebar-container.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/sidebars/sidebar-newsroom.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/lists/people-list.xsl"/>
     <xsl:import href="http://webdev.hbs.edu/shared/templates/layouts/layouts.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/lists/leadership-list.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/features/media-coverage.xsl"/>
-
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/headers/page-header-traditional.xsl"/>
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/features/stats-traditional.xsl"/>
 
     <xsl:param name="args"/> 
     <xsl:output method="html"/>
