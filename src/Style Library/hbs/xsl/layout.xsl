@@ -21,7 +21,7 @@
                <!-- inject the breadcrumb -->
                <xsl:for-each select="$header/*">
                   <xsl:element name="{name()}">
-                     <Breadcrumb Xsl="core-breadcrumb.xsl"/>
+                     <Breadcrumb/>
                      <xsl:copy-of select="node()"/>
                   </xsl:element>
                </xsl:for-each>
