@@ -4,7 +4,7 @@
    exclude-result-prefixes="hbs z msxsl">
    
    
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/layouts/layouts.xsl"/>
+    <xsl:import href="{$templates}/layouts/layouts.xsl"/>
 
     <xsl:param name="args"/> 
     <xsl:output method="html"/>
