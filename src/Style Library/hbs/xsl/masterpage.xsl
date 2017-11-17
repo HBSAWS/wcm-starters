@@ -4,7 +4,7 @@
    xmlns:z="#RowsetSchema" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
    exclude-result-prefixes="hbs z msxsl">
 
-    <xsl:import href="http://webdev.hbs.edu/shared/templates/headers/universal.xsl"/>
+    <xsl:import href="https://secure.hbs.edu/static/shared/templates/headers/universal.xsl"/>
 
     <xsl:param name="args"/>
     <xsl:output omit-xml-declaration="yes" method="html"/>
