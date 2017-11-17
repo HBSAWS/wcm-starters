@@ -13,8 +13,9 @@
         <Render>
         
             <xsl:variable name="site" select="'/managing-the-future-of-work'"/>
-            <xsl:value-of select="hbs:SetVar('site.name','Managing the Future of Work')"/>
-            <xsl:value-of select="hbs:SetVar('site.root','/managing-the-future-of-work')"/>
+            <xsl:value-of select="hbs:SetVar('templates','http://webdev.hbs.edu/shared/templates')"/>
+            <xsl:value-of select="hbs:SetVar('xtemplates','https://secure.hbs.edu/static/shared/templates')"/>            
+            <xsl:value-of select="hbs:SetVar('breadcrumb.root','/managing-the-future-of-work')"/>
             <xsl:value-of select="hbs:SetVar('analytics.profile','managing-the-future-of-work')"/>
             <xsl:value-of select="hbs:SetVar('site.search','/Pages/search.aspx')"/>
             
