@@ -51,8 +51,12 @@
                 <xsl:when test="$args = 'head'">
                     <UniversalHead/>
                 </xsl:when>
-                <xsl:when test="$args = 'supernav'"><UniversalHeader/></xsl:when>
-                <xsl:when test="$args = 'js'"><UniversalJs/></xsl:when>
+                <xsl:when test="$args = 'supernav'">
+                   <UniversalHeader/>
+                </xsl:when>
+                <xsl:when test="$args = 'js'">
+                   <UniversalJs/>
+                </xsl:when>
             </xsl:choose>
             
             <hbs:Repeat/>
