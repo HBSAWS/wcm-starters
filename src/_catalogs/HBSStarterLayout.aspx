@@ -16,6 +16,7 @@
 			</SharePointWebControls:NoteField>
 			<SharePointWebControls:NoteField FieldName="PageSidebarXml" runat="server" CssClass="page-content-xml">
 			</SharePointWebControls:NoteField>
+                        <SharePointWebControls:TextField FieldName="Title" runat="server" DisplaySize="80"/>
 			<SharePointWebControls:DropDownChoiceField FieldName="PrimaryColor" runat="server" />
 		</div>
     </PublishingWebControls:EditModePanel>
