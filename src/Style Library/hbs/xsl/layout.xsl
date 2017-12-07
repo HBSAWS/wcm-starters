@@ -89,10 +89,8 @@
         </xsl:choose>
        
     </xsl:template>
-        
-    <xsl:template match="Search">
-       <xsl:value-of select="hbs:CallStr('stories-search.xsl',@Filter,@View)" disable-output-escaping="yes"/>
-    </xsl:template>
+
+    <!-- example of a SPQuery 
 
     <xsl:template match="Research">
         <xsl:variable name="query">
@@ -133,7 +131,7 @@
         
         <xsl:apply-templates select="msxsl:node-set($research)"/>
         <div class="base tablet-base mobile-base"/>
-    </xsl:template>
+    </xsl:template>-->
 
    
 
