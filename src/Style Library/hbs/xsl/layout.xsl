@@ -52,7 +52,8 @@
         </div>
         
         <xsl:choose>
-           <xsl:when test="Body/Search">
+           <!--If I have a search plugin, go full screen -->
+           <xsl:when test="Body/SiteSearch">
                 <xsl:apply-templates select="Body"/>
                 <div class="base tablet-base mobile-base"></div>
            </xsl:when>
