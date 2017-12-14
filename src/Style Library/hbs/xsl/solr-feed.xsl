@@ -72,6 +72,7 @@
                </xsl:if>
                <field name="HBSSource"></field>
                <field name="HBSSubset"></field>
+               <field name="HBSFaculty">jwells</field>
                <field name="HBSModifiedDate"><xsl:value-of select="@ows_Modified"/></field>
                <field name="HBSSortDate"><xsl:value-of select="hbs:Replace(@ows_PublicationDate,' ','T')"/>Z</field>
                <field name="HBSTitle"></field>
