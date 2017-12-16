@@ -18,13 +18,22 @@
             <xsl:variable name="header" select="hbs:TryParseXml(hbs:GetPageProperty('PageHeaderXml'))"/>
 
             <Header>
-               <!-- inject the breadcrumb -->
-               <xsl:for-each select="$header/*">
-                  <xsl:element name="{name()}">
-                     <Breadcrumb/>
-                     <xsl:copy-of select="node()"/>
-                  </xsl:element>
-               </xsl:for-each>
+               <xsl:choose>
+                  <xsl:when test="not($header/*) and contains(hbs:GetServerVariable('PATH_INFO'),'/default.aspx')">
+                     <PageHeader>
+                       <Title><xsl:value-of select="hbs:GetWebProperty('Title')"/></Title>
+                     </PageHeader>
+                  </xsl:when>
+                  <xsl:when test="not($header/*)">
+                     <PageHeader>
+                       <Title><xsl:value-of select="hbs:GetWebProperty('Title')"/></Title>
+                       <SubTitle><xsl:value-of select="hbs:GetPageProperty('Title')"/></SubTitle>
+                     </PageHeader>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:copy-of select="$header/*"/>
+                  </xsl:otherwise>
+               </xsl:choose>
             </Header>
 
             <Body>
