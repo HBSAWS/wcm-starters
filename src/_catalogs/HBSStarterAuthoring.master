@@ -110,7 +110,7 @@ id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 	<asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" runat="server"/>
 </head>
 
-<body onload="javascript:_spBodyOnLoadWrapper();">
+<body onload="javascript:_spBodyOnLoadWrapper();" class="expanded-grid-framework">
 
 <form runat="server" onsubmit="return _spFormOnSubmitWrapper();">
 
