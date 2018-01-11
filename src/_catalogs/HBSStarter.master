@@ -23,7 +23,7 @@ __MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e3209265
 id="g_29824302_d7b2_4c77_b6c6_9e42092651c2"></XslQuery4:XslQueryWebPart4>
 	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"></asp:ContentPlaceHolder>
 </head>
-<body>
+<body class="expanded-grid-framework">
 <textarea style="display:none" aria-hidden="true" aria-label="Hidden Textarea">
 <form runat="server"></form>
 <WebPartPages:SPWebPartManager runat="server"/>
