@@ -40,14 +40,10 @@
                 <xsl:when test="$args = 'footer'">
                     <UniversalFooter>
                         <Address>
-                            U.S. Competitiveness Project<br/>
-                            Manjari Raman<br/>
-                            Program Director &amp; Senior Researcher<br/>
                             Harvard Business School<br/>
-                            Connell House <br/>
                             Boston, MA 02163<br/>
-                            Phone:  <strong>1.617.495.6288</strong><br/>
-                            Email: <strong><a class="to email inherit-color" href="#" id="footer-email">mraman+hbs.edu</a></strong>
+                            Phone:  <strong>1.617.495.6000</strong><br>
+                            Email: <strong><a class="to email inherit-color" href="#" id="footer-email">name+hbs.edu</a></strong>
                         </Address>
                     </UniversalFooter>
                 </xsl:when>
