@@ -9,7 +9,7 @@
 <%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register tagprefix="XslQuery4" namespace="hbs.internet.XslQuery4" assembly="hbs.internet.XslQuery4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7afffba6c934d3eb" %>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
@@ -37,7 +37,7 @@ id="g_29824302_d7b2_4c77_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 	__MarkupType="vsattributemarkup" __WebPartId="{29824302-d7b2-4c77-b6c5-9e42092651c1}" WebPart="true" __designer:IsClosed="false" 
 	id="g_29824302_d7b2_4c87_b6c5_9e4209265192"></XslQuery4:XslQueryWebPart4>
 	<!-- STARTINDEX -->
-	<div class="mainContainer link-controller" runat="server" aria-role="main">
+	<div class="mainContainer link-controller" runat="server" role="main">
 		<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
 		<asp:ContentPlaceHolder id="PlaceHolderEditModeArea" runat="server" />
 	</div>
