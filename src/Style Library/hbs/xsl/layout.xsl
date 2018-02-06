@@ -4,8 +4,9 @@
    exclude-result-prefixes="hbs z msxsl">
    
    
-    <xsl:import href="{$templates}/layouts/layouts.xsl"/>
-	 <xsl:import href="{$templates}/features/site-search.xsl"/>
+   <xsl:import href="{$templates}/util/spacer.xsl"/>
+   <xsl:import href="{$templates}/util/hr-rule.xsl"/>
+   <xsl:import href="{$templates}/features/site-search.xsl"/>
 
     <xsl:param name="args"/> 
     <xsl:output method="html"/>
