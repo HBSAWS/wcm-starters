@@ -3,10 +3,15 @@
    xmlns:z="#RowsetSchema" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
    exclude-result-prefixes="hbs z msxsl">
    
-   
-   <xsl:import href="{$templates}/util/spacer.xsl"/>
-   <xsl:import href="{$templates}/util/hr-rule.xsl"/>
-   <xsl:import href="{$templates}/features/site-search.xsl"/>
+    <xsl:import href="{$templates}/layouts/auto-layout.xsl"/>
+    <xsl:import href="{$templates}/headers/page-header.xsl"/>
+    <xsl:import href="{$templates}/util/html-util.xsl"/>
+    <xsl:import href="{$templates}/features/site-search.xsl"/>
+    <xsl:import href="{$templates}/text/body-content.xsl"/>
+    <xsl:import href="{$templates}/wcm/edit-panel.xsl"/>
+
+    <!-- Left Nav (if needed) -->
+    <xsl:import href="{$templates}/navigation/local-navigation.xsl"/>
 
     <xsl:param name="args"/> 
     <xsl:output method="html"/>
@@ -17,88 +22,50 @@
                 <hbs:Debug/>
             </xsl:if>
 
-            <xsl:variable name="header" select="hbs:TryParseXml(hbs:GetPageProperty('PageHeaderXml'))"/>
+            <AutoLayout>
+              <xsl:variable name="header" select="hbs:TryParseXml(hbs:GetPageProperty('PageHeaderXml'))"/>
+              <Header>
+                 <xsl:choose>
+                    <xsl:when test="not($header/*)">
+                      <PageHeader AutoFill="True"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                       <xsl:copy-of select="$header/*"/>
+                    </xsl:otherwise>
+                 </xsl:choose>
+              </Header>
 
-            <Header>
-               <xsl:choose>
-                  <xsl:when test="not($header/*) and contains(hbs:GetServerVariable('PATH_INFO'),'/default.aspx')">
-                     <PageHeader>
-                       <Title><xsl:value-of select="hbs:GetWebProperty('Title')"/></Title>
-                     </PageHeader>
-                  </xsl:when>
-                  <xsl:when test="not($header/*)">
-                     <PageHeader>
-                       <Title><xsl:value-of select="hbs:GetWebProperty('Title')"/></Title>
-                       <SubTitle><xsl:value-of select="hbs:GetPageProperty('Title')"/></SubTitle>
-                     </PageHeader>
-                  </xsl:when>
-                  <xsl:otherwise>
-                     <xsl:copy-of select="$header/*"/>
-                  </xsl:otherwise>
-               </xsl:choose>
-            </Header>
+              <xsl:if test="$args = 'left-nav'">
+                <LocalNavigation>
+                  <Site Path="/project-url/section1/" Depth="2"/>
+                  <Site Path="/project-url/section2/" Depth="2"/>
+                </LocalNavigation>
+              </xsl:if>
 
-            <Body>
-               <xsl:copy-of select="hbs:TryParseXml(hbs:GetPageProperty('PageContentXml'))/*"/>
-            </Body>
-            
-            <xsl:variable name="sidebar" select="hbs:TryParseXml(hbs:GetPageProperty('PageSidebarXml'))/*"/>
+              <Body>
+                <EditPanel/>
+                <BodyContent>
+                  <xsl:copy-of select="hbs:TryParseXml(hbs:GetPageProperty('PageContentXml'))/*"/>
+                </BodyContent>
+              </Body>
+              
+              <xsl:variable name="sidebar" select="hbs:TryParseXml(hbs:GetPageProperty('PageSidebarXml'))/*"/>
 
-            <xsl:if test="$sidebar">
-                <Sidebar>
-                   <SidebarContainer>
-                      <xsl:copy-of select="$sidebar"/>
-                   </SidebarContainer>
-                </Sidebar>
-            </xsl:if>
+              <xsl:if test="$sidebar">
+                  <Sidebar>
+                     <SidebarBlockContainer>
+                        <xsl:copy-of select="$sidebar"/>
+                     </SidebarBlockContainer>
+                  </Sidebar>
+              </xsl:if>
+            </AutoLayout>
 
             <hbs:Repeat/>
         </Render>
     </xsl:template>
 
     <xsl:template match="/Render">
-        
-        <div class="page-header inherit-bg h1-aplha-uc">
-            <xsl:apply-templates select="Header"/>
-        </div>
-        
-        <xsl:choose>
-           <!--If I have a search plugin, go full screen -->
-           <xsl:when test="Body/SiteSearch">
-                <xsl:apply-templates select="Body"/>
-                <div class="base tablet-base mobile-base"></div>
-           </xsl:when>
-           
-           <!--Page with Sidebar, do 8-12 -->
-           <xsl:when test="Sidebar">
-                <div class="container mobile-container tablet-container">
-                    <div class="row">
-                        <div class="span8 body-margins">
-                            <div class="cap mobile-cap tablet-cap"></div>
-                            <xsl:apply-templates select="Body"/>
-                            <div class="base"></div>
-                        </div>
-                        <div class="span4 sidebar sidebar-margins">
-                            <xsl:apply-templates select="Sidebar"/>
-                            <div class="base"></div>
-                        </div>                      
-                    </div>
-                </div>
-           </xsl:when>
-           <xsl:otherwise>
-                <div class="container mobile-container tablet-container">
-                    <div class="cap mobile-cap tablet-cap"></div>
-                    <div class="row">
-                        <div class="span12 body-margins">
-                        
-                            <xsl:apply-templates select="Body"/>
-                        </div>
-                    </div>
-                    <div class="base"></div>
-                </div>
-           </xsl:otherwise>
-        </xsl:choose>
-       
+        <xsl:apply-templates/>       
     </xsl:template>
 
     <!-- example of a SPQuery 
